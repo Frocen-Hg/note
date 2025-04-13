@@ -93,6 +93,9 @@ docker run hello-world
 备份原有repo：
 cp -r /etc/yum.repos.d /etc/yum.repos.d.bak
 
+下载阿里源：
+sudo curl -o /etc/yum.repos.d/CentOS-Base.repo https://mirrors.aliyun.com/repo/Centos-7.repo
+
 替换CentOS源（阿里）：
 sudo tee /etc/yum.repos.d/docker-ce.repo <<EOF
 [docker-ce-stable]
